@@ -7,6 +7,25 @@ html {
   font-size: $body-text-size;
 }
 
+h1, h2, h3, p {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: .9rem;
+}
 
 // Global
 html {
@@ -37,12 +56,10 @@ section {
   align-items: center;
 }
 
-h1, h2, h3, p {
-  text-align: center;
-}
+
 
 p {
-  padding: 16px;
+  padding: 32px;
   color: $grayish-blue;
 }
 
