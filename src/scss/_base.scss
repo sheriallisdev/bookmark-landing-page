@@ -7,4 +7,24 @@ html {
   font-size: $body-text-size;
 }
 
+
 // Global
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.site__wrapper{
+  padding: 40px 32px;
+  width: 95vw;
+}
