@@ -17,8 +17,9 @@ $breakpoint-desktop: 1440px;
 // Mixins
 
 %button {
-  display: inline-flex;
+  display: inline-block;
   text-decoration: none;
+  text-align: center;
   padding: 15px 18px;
   margin: 10px;
   width: 150px;
