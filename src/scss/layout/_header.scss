@@ -1,0 +1,15 @@
+.site__header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px; 
+
+  .hamburger-icon {
+    height: 20px;
+  }
+
+  .navbar {
+    &__desktop{
+      display: none;
+    }
+  }
+}
