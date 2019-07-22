@@ -1,0 +1,28 @@
+.faq {
+  .accordion{
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    &__item{
+      margin-bottom: 20px;
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #DEDFE3;
+
+      img {
+        height: 18px;
+      }
+    }
+    &__body{
+      p{
+        text-align: left;
+        padding-left: 0;
+      }
+    }
+  }
+}
