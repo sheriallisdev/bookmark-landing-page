@@ -9,6 +9,26 @@ $soft-red: hsl(0, 94%, 66%);
 $grayish-blue: hsl(229, 8%, 60%);
 $very-dark-blue: hsl(229, 31%, 21%);
 
+$light-gray: #F7F7F7;
+$white: #fff;
+
 $breakpoint-desktop: 1440px;
 
 // Mixins
+
+%button {
+  display: inline-flex;
+  text-decoration: none;
+  padding: 15px 18px;
+  margin: 10px;
+  width: 150px;
+  color: $white;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+  box-shadow: 0 8px 8px rgba(73, 93, 207, .2);
+  &:hover{
+    cursor: pointer;
+  }
+}

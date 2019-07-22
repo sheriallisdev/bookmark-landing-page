@@ -22,9 +22,36 @@ html {
 body {
   display: flex;
   justify-content: center;
+  color: $very-dark-blue;
 }
 
 .site__wrapper{
   padding: 40px 32px;
   width: 95vw;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+}
+
+p {
+  padding: 16px;
+  color: $grayish-blue;
+}
+
+.btn-primary {
+  @extend %button;
+  background-color: $soft-blue;
+}
+
+.btn-tertiary{
+  @extend %button;
+  background-color: $light-gray;
+  color: $grayish-blue;
 }
