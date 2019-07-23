@@ -52,6 +52,10 @@ body {
   width: 100%;
   overflow: hidden;
 
+  @media (min-width: $breakpoint-desktop) {
+    max-width: 1440px;
+  }
+
   &--large{
     width: 100%;
   }

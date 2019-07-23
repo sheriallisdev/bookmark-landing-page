@@ -13,3 +13,48 @@
     }
   }
 }
+
+// Desktop Styles
+
+@media (min-width: $breakpoint-desktop) {
+  .site__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 114px;
+
+    .hamburger-icon {
+      display: none;
+    }
+
+    .navbar {
+      ul {
+        list-style-type: none;
+        li{
+          display: inline-block;
+          margin-left: 48px;
+        }
+      }
+
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $very-dark-blue;
+      }
+
+      .btn-secondary{
+        font-size: .7rem;
+        color: $white;
+      }
+
+      &__desktop{
+        display: flex;
+      }
+    }
+
+    .header__logo {
+      height: 25px;
+    }
+  }
+}  
