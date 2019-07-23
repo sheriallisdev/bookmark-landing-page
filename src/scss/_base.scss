@@ -74,17 +74,27 @@ p {
 .btn-primary {
   @extend %button;
   background-color: $soft-blue;
+  &:hover{
+    border: 2px solid $soft-blue;
+    color: $soft-blue;
+  }
 }
 
 .btn-secondary{
   @extend %button;
   background-color: $soft-red;
+  &:hover{
+    border: 2px solid $soft-red;
+  }
 }
 
 .btn-tertiary{
   @extend %button;
   background-color: $light-gray;
   color: $grayish-blue;
+  &:hover{
+    border: 2px solid $very-dark-blue;
+  }
 }
 
 .img-bg-decoration {
