@@ -1,0 +1,43 @@
+.newsletter {
+  background-color: $soft-blue;
+  color: $white;
+  padding: 60px 10px;
+
+  p{
+    color: $white;
+    padding-bottom: 10px;
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+
+  &__form{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    &--input{
+      padding: 20px;
+      font-size: .9rem;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 16px;
+
+      &::placeholder {
+        color: #C8C9D0;
+      }
+    }
+
+    button {
+      border: none;
+      width: 100%;
+      margin: 0;
+      font-weight: 700;
+      font-size: .9rem;
+    }
+  }
+
+
+}

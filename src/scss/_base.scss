@@ -41,13 +41,18 @@ html {
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   color: $very-dark-blue;
 }
 
 .site__wrapper{
   padding: 40px 32px;
   width: 95vw;
+
+  &--large{
+    width: 100%;
+  }
 }
 
 section {
@@ -57,8 +62,6 @@ section {
   margin-bottom: 140px;
 }
 
-
-
 p {
   padding: 32px;
   color: $grayish-blue;
@@ -67,6 +70,11 @@ p {
 .btn-primary {
   @extend %button;
   background-color: $soft-blue;
+}
+
+.btn-secondary{
+  @extend %button;
+  background-color: $soft-red;
 }
 
 .btn-tertiary{
