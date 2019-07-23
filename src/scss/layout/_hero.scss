@@ -12,3 +12,32 @@
     flex-wrap: wrap;
   }
 }
+
+// Desktop Styles
+@media (min-width: $breakpoint-desktop){
+  .hero {
+    flex-direction: row;
+
+    &__text{
+      width: 50%;
+
+      p {
+        text-align: left;
+        padding-left: 0; 
+      }
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .btn:first-of-type{
+      margin-left: 0;
+    }
+
+    &__img {
+      width: 100%;
+      order: 1;
+    }
+  }
+}
