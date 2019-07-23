@@ -1,0 +1,36 @@
+.site-footer{
+  background-color: $very-dark-blue;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 10px;
+
+  &__logo{
+    margin-bottom: 40px;
+  }
+
+  &__nav {
+    list-style: none;
+    text-align: center;
+
+    li {
+      padding-bottom: 32px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: $white;
+      text-transform: uppercase;
+    }
+  }
+
+  .social-media{
+    display: flex;
+    justify-content: center;
+    img {
+      padding: 20px 20px 0 20px;
+    }
+  }
+
+}
