@@ -30,3 +30,12 @@
     }
   }
 }
+
+// Desktop Styles
+@media(min-width: $breakpoint-desktop){
+  .faq {
+    .accordion {
+      width: 600px;
+    }
+  }
+}
