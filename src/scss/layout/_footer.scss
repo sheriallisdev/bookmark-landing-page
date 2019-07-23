@@ -32,5 +32,35 @@
       padding: 20px 20px 0 20px;
     }
   }
+}
 
+// Desktop Styles
+@media(min-width: $breakpoint-desktop){
+  .site-footer{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &__logo {
+      margin: 0;
+      margin-right: 65px;
+      height: 100%;
+    }
+
+    &__nav{
+      &--item {
+        display: inline-block;
+        padding: 36px;
+        font-size: .8rem;
+      }
+    }
+
+    .social-media{
+      margin-left: 450px;
+      img {
+        padding: 0;
+        margin-left: 40px;
+      }
+    }
+  }
 }
