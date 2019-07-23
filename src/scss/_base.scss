@@ -52,10 +52,6 @@ body {
   width: 100%;
   overflow: hidden;
 
-  @media (min-width: $breakpoint-desktop) {
-    max-width: 1440px;
-  }
-
   &--large{
     width: 100%;
   }
@@ -112,5 +108,18 @@ p {
   height: 80%;
   border-radius: 300px;
   background: $soft-blue;
+  }
+}
+
+// Desktop Styles
+
+@media (min-width: $breakpoint-desktop) {
+  .site__wrapper{
+
+    max-width: 1440px;
+  }
+
+  p {
+    font-size: 1rem;
   }
 }
