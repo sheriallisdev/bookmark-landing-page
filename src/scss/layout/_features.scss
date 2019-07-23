@@ -42,3 +42,49 @@
     }
   }
 }
+
+// Desktop Styles
+@media (min-width: $breakpoint-desktop){
+  .features{
+    header{
+      width: 600px;
+    }
+
+    &-nav{
+      flex-direction: row;
+      &__wrapper{
+        width: 730px;
+      }
+
+      &__item{
+        border-top: none;
+        border-bottom: 1px solid rgba(73, 93, 207, .2);
+
+        &--active{
+          font-weight: 500;
+          border-bottom: 4px solid $soft-red;
+        }
+      }
+    }
+
+    &__tab{
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    &__img {
+      width: 50%;
+    }
+
+    &__desc{
+      width: 40%;
+      align-items: flex-start;
+      margin-left: 125px;
+
+      p {
+        text-align: left;
+        padding-left: 0;
+      }
+    }
+  }
+}
