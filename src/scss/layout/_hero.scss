@@ -1,8 +1,9 @@
 .hero {
-  &__img {
-    width: 100%;
-    position: relative;
-    margin-bottom: 90px;
+  &__img{
+    &::before{
+      bottom: -20px;
+      left: 90px;
+    }
   }
 
   &__downloads {

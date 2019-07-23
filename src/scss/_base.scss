@@ -67,6 +67,8 @@ p {
   color: $grayish-blue;
 }
 
+
+
 .btn-primary {
   @extend %button;
   background-color: $soft-blue;
@@ -81,4 +83,28 @@ p {
   @extend %button;
   background-color: $light-gray;
   color: $grayish-blue;
+}
+
+.img-bg-decoration {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+  max-width: 580px;
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &::before{
+  z-index: -99999;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1000px;
+  height: 80%;
+  border-radius: 300px;
+  background: $soft-blue;
+  }
 }

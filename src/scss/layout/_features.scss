@@ -21,9 +21,12 @@
   }  
 
   &__tab {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    &--selected{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    display: none;
   }
 
   &__desc{
@@ -33,7 +36,9 @@
   }
 
   &__img {
-    width: 90%;
-    margin-bottom: 70px;
+    &::before{
+      bottom: -40px;
+      right: 90px;
+    }
   }
 }
