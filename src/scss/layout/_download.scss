@@ -23,6 +23,19 @@
 
     .btn {
       width: 230px;
+      position: relative;
+      margin-top: 40px;
+
+      &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/bg-dots.svg');
+        background-repeat: repeat-x;
+        top: -30px;
+        left: 0px;
+      }
     }
   }
 
@@ -38,7 +51,7 @@
     margin-top: 48px;
 
     .card {
-      height: 380px;
+      height: 100%;
     }
 
     .card:nth-of-type(2){
