@@ -1,0 +1,82 @@
+.mobile-overlay {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 999999;
+  background-color: rgba($very-dark-blue, 0.95);
+  overflow: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  overflow-y:hidden; 
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 100%;
+
+    .logo-text, .logo-circle{
+      fill: $white;
+    }
+
+    .logo-bookmark {
+      fill: rgba($very-dark-blue, 0.95);
+    }
+  }
+  &__logo {
+    height: 25px;
+  }
+
+
+  &__close {
+    padding: 10px;
+  }
+  nav {
+    margin-top: 70px;
+    width: 100%;
+  }
+
+  .navbar__item {
+    list-style: none;
+    border-top: 1px solid rgba($white, 0.2);
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+
+  .btn-mobile{
+    @extend %button;
+    background-color: transparent;
+    border: 2px solid $white;
+    width: 100%;
+    font-size: 1.1rem;
+    &:hover{
+      color: $very-dark-blue;
+    }
+  }
+
+  .social-media{
+    padding-bottom: 50px;
+    img{
+      padding: 20px;
+    }
+  }
+}
