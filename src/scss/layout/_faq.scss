@@ -21,6 +21,8 @@
 
         .accordion__body{
           border-bottom: 1px solid #DEDFE3;
+          animation-name: fadeIn;
+          animation-duration: .3s;
         }
       }
     }
@@ -55,7 +57,6 @@
       &.hidden{
         display: none;
       }
-
 
       p{
         text-align: left;
