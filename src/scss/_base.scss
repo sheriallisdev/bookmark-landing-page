@@ -80,6 +80,10 @@ p {
   color: $grayish-blue;
 }
 
+.hidden {
+  display: none;
+}
+
 .btn-primary {
   @extend %button;
   background-color: $soft-blue;

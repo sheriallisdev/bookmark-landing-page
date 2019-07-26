@@ -1,28 +1,28 @@
 .faq {
-  .accordion{
+  .accordion {
     padding: 64px 0;
     display: flex;
     flex-direction: column;
-    font-size: .8rem;
+    font-size: 0.8rem;
     width: 95%;
 
     h3 {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
 
-    &__item{
+    &__item {
       margin-bottom: 20px;
-      &.active{
+      &.active {
         .icon-arrow {
           transform: rotate(-180deg);
           transform-origin: center;
           stroke: $soft-red;
         }
 
-        .accordion__body{
-          border-bottom: 1px solid #DEDFE3;
+        .accordion__body {
+          border-bottom: 1px solid #dedfe3;
           animation-name: fadeIn;
-          animation-duration: .3s;
+          animation-duration: 0.3s;
         }
       }
     }
@@ -32,9 +32,9 @@
       justify-content: space-between;
       align-items: center;
       padding: 24px 0;
-      border-bottom: 1px solid #DEDFE3;
+      border-bottom: 1px solid #dedfe3;
 
-      &:hover{
+      &:hover {
         color: $soft-red;
         cursor: pointer;
       }
@@ -53,12 +53,8 @@
         stroke: $soft-blue;
       }
     }
-    &__body{
-      &.hidden{
-        display: none;
-      }
-
-      p{
+    &__body {
+      p {
         text-align: left;
         padding-left: 0;
       }
@@ -67,7 +63,7 @@
 }
 
 // Desktop Styles
-@media(min-width: $breakpoint-desktop){
+@media (min-width: $breakpoint-desktop) {
   .faq {
     .accordion {
       width: 640px;

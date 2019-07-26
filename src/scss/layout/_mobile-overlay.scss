@@ -10,14 +10,19 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  overflow-y:hidden; 
+  overflow-y: hidden;
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
+
+  &.active {
+    display: flex;
+  }
 
   .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
-
   }
 
   &__header {
@@ -27,7 +32,8 @@
     margin-top: 40px;
     width: 100%;
 
-    .logo-text, .logo-circle{
+    .logo-text,
+    .logo-circle {
       fill: $white;
     }
 
@@ -38,7 +44,6 @@
   &__logo {
     height: 25px;
   }
-
 
   &__close {
     padding: 10px;
@@ -62,20 +67,20 @@
     }
   }
 
-  .btn-mobile{
+  .btn-mobile {
     @extend %button;
     background-color: transparent;
     border: 2px solid $white;
     width: 100%;
     font-size: 1.1rem;
-    &:hover{
+    &:hover {
       color: $very-dark-blue;
     }
   }
 
-  .social-media{
+  .social-media {
     padding-bottom: 50px;
-    img{
+    img {
       padding: 20px;
     }
   }
