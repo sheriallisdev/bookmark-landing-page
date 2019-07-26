@@ -1,4 +1,4 @@
-.site-footer{
+.site-footer {
   background-color: $very-dark-blue;
   color: $white;
   display: flex;
@@ -6,7 +6,7 @@
   align-items: center;
   padding: 60px 10px;
 
-  &__logo{
+  &__logo {
     margin-bottom: 40px;
   }
 
@@ -17,30 +17,31 @@
     li {
       padding-bottom: 32px;
     }
-    
+
     a {
       text-decoration: none;
       color: $white;
       text-transform: uppercase;
-      &:hover{
+      &:hover,
+      &:focus {
         color: $soft-red;
       }
     }
   }
 
-  .social-media{
+  .social-media {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    a{
+    a {
       padding: 10px;
       margin: 10px;
     }
 
     .icon {
       fill: $white;
-      &:hover{
+      &:hover {
         fill: $soft-red;
       }
     }
@@ -48,8 +49,8 @@
 }
 
 // Desktop Styles
-@media(min-width: $breakpoint-desktop){
-  .site-footer{
+@media (min-width: $breakpoint-desktop) {
+  .site-footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -60,15 +61,15 @@
       height: 100%;
     }
 
-    &__nav{
+    &__nav {
       &--item {
         display: inline-block;
         padding: 36px;
-        font-size: .8rem;
+        font-size: 0.8rem;
       }
     }
 
-    .social-media{
+    .social-media {
       margin-left: 450px;
       img {
         padding: 0;

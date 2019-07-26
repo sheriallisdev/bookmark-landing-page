@@ -4,7 +4,7 @@
   padding: 60px 10px;
   margin-bottom: 0;
 
-  p{
+  p {
     color: $white;
     padding-bottom: 10px;
 
@@ -13,26 +13,31 @@
     }
   }
 
-  &__form{
+  &__form {
     margin-top: 32px;
     display: flex;
     flex-direction: column;
     width: 300px;
 
-    &--input{
+    &--input {
       padding: 20px;
-      font-size: .9rem;
+      font-size: 0.9rem;
       border-radius: 5px;
       border: none;
       margin-bottom: 16px;
-
-      &::placeholder {
-        color: #C8C9D0;
+      &:focus {
+        border: 4px solid $very-dark-blue;
       }
 
+      &::placeholder {
+        color: #c8c9d0;
+      }
     }
-    .btn-secondary:hover{
-      color: $soft-red;
+    .btn-secondary {
+      &:hover,
+      &:focus {
+        color: $soft-red;
+      }
     }
 
     button {
@@ -40,10 +45,10 @@
       width: 100%;
       margin: 0;
       font-weight: 700;
-      font-size: .9rem;
+      font-size: 0.9rem;
 
-      .btn{
-        .btn-secondary:hover{
+      .btn {
+        .btn-secondary:hover {
           color: $soft-red;
         }
       }
@@ -52,28 +57,28 @@
 }
 
 // Desktop Styles
-@media(min-width: $breakpoint-desktop){
+@media (min-width: $breakpoint-desktop) {
   .newsletter {
     padding-bottom: 72px;
-    
+
     p {
-      font-size: .8rem;
+      font-size: 0.8rem;
       margin-bottom: 24px;
     }
 
-    &__form{
+    &__form {
       width: 100%;
       flex-direction: row;
       margin-top: 36px;
 
-      &--input{
+      &--input {
         width: 300px;
         height: 48px;
-        font-size: .8rem;
+        font-size: 0.8rem;
       }
 
       .btn {
-        font-size: .8rem;
+        font-size: 0.8rem;
         margin-left: 16px;
         height: 48px;
         width: 125px;
