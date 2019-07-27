@@ -29,22 +29,20 @@ function openNav() {
 
 // Accordion
 
-const accordionItems = document.querySelectorAll(".accordion__item");
+const accordionHeader = document.querySelectorAll(".accordion__header");
 const accordionBody = document.querySelectorAll(".accordion__body");
 
-accordionItems.forEach(function(accordion) {
-  const accordionHeader = accordion.firstElementChild;
-  accordionHeader.addEventListener("click", toggleAccordion);
+accordionHeader.forEach(function(accordion) {
+  accordion.addEventListener("click", toggleAccordion);
 });
 
 function toggleAccordion(e) {
-  accordionBody.forEach(function(body) {
-    if (body.previousElementSibling === e.target) {
-      removeClass(body, "hidden");
-      addClass(body.parentElement, "active");
-    } else {
-      removeClass(body.parentElement, "active");
-      addClass(body, "hidden");
-    }
-  });
+  this.classList.toggle("active");
+
+  const accordionBody = this.nextElementSibling;
+  if (accordionBody.style.display === "block") {
+    accordionBody.style.display = "none";
+  } else {
+    accordionBody.style.display = "block";
+  }
 }
