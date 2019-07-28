@@ -46,3 +46,26 @@ function toggleAccordion(e) {
     accordionBody.style.display = "block";
   }
 }
+
+// Email validation
+const email = document.getElementById("form__email");
+const form = document.getElementById("form");
+const errorContent = document.querySelector(".newsletter__form--error");
+const errorIcon = document.querySelector(".icon-error");
+
+form.addEventListener("submit", function(e) {
+  if (emailIsValid(email.value) === false) {
+    e.preventDefault();
+
+    removeClass(errorContent, "hidden");
+    removeClass(errorIcon, "hidden");
+    addClass(errorContent, "active");
+    addClass(email, "error");
+
+    errorContent.setAttribute("role", "alert");
+  }
+});
+
+function emailIsValid(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
