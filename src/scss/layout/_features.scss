@@ -1,53 +1,46 @@
 .features {
-  &-nav{
+  &-nav {
     display: flex;
     flex-direction: column;
     list-style: none;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 72px;
-    &__wrapper{
+    &__wrapper {
       width: 100%;
     }
 
-    &__item{
+    &__item {
       padding: 16px;
-      border-top: 1px solid rgba(73, 93, 207, .2);
+      border-top: 1px solid rgba(73, 93, 207, 0.2);
       width: 100%;
-      &:last-child{
-        border-bottom: 1px solid rgba(73, 93, 207, .2);
+      &:last-child {
+        border-bottom: 1px solid rgba(73, 93, 207, 0.2);
       }
-      &:hover{
+      &:hover {
         color: $soft-red;
         cursor: pointer;
       }
     }
-  }  
-
-  &__tab {
-  //   &--selected{
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-  //   }
-  //   display: none;
-  // }
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      &.hidden{
-        display: none;
-      }
   }
 
-  &__desc{
+  &__tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &.hidden {
+      display: none;
+    }
+  }
+
+  &__desc {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   &__img {
-    &::before{
+    &::before {
       bottom: -40px;
       right: 90px;
     }
@@ -55,27 +48,26 @@
 }
 
 // Desktop Styles
-@media (min-width: $breakpoint-desktop){
-  .features{
-
-    &-nav{
+@media (min-width: $breakpoint-desktop) {
+  .features {
+    &-nav {
       flex-direction: row;
-      &__wrapper{
+      &__wrapper {
         width: 730px;
       }
 
-      &__item{
+      &__item {
         border-top: none;
-        border-bottom: 1px solid rgba(73, 93, 207, .2);
+        border-bottom: 1px solid rgba(73, 93, 207, 0.2);
 
-        &--active{
+        &--active {
           font-weight: 500;
           border-bottom: 4px solid $soft-red;
         }
       }
     }
 
-    &__tab{
+    &__tab {
       flex-direction: row;
       justify-content: center;
     }
@@ -84,7 +76,7 @@
       width: 50%;
     }
 
-    &__desc{
+    &__desc {
       width: 40%;
       align-items: flex-start;
       margin-left: 125px;

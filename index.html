@@ -261,8 +261,12 @@
             Stay up-to-date with what we’re doing
           </h2>
           <div class="newsletter__form--wrapper">
-            <form action="POST" class="newsletter__form">
-              <input class="newsletter__form--input" placeholder="Enter your email address" required/>
+            <form action="/" method="GET" id="form" class="newsletter__form" novalidate>
+              <div class="input-wrapper">
+                <input class="newsletter__form--input" id="form__email" type="email" placeholder="Enter your email address">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path class="icon-error hidden" d="M256 48C141.6 48 48 141.601 48 256s93.6 208 208 208 208-93.601 208-208S370.4 48 256 48zm24 312h-48v-40h48v40zm0-88h-48V144h48v128z"/></svg>
+                <p class="newsletter__form--error hidden">Whoops, make sure it's an email</p>
+              </div>
               <button type="submit" class="btn btn-secondary">Contact Us</button>
             </form>
           </div>

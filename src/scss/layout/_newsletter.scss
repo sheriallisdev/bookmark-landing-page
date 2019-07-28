@@ -19,20 +19,61 @@
     flex-direction: column;
     width: 300px;
 
+    &--error {
+      &.active {
+        animation-name: fadeIn;
+        animation-duration: 0.2s;
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: -18px;
+        left: 0px;
+        background-color: $soft-red;
+        height: 28px;
+        font-size: 0.6rem;
+        margin: 0 0 24px 0;
+        padding: 8px;
+        border-radius: 0 0 5px 5px;
+      }
+    }
+
+    .input-wrapper {
+      position: relative;
+
+      svg {
+        position: absolute;
+        right: 20px;
+        bottom: 50%;
+        .icon-error {
+          fill: $soft-red;
+          position: absolute;
+        }
+      }
+    }
+
     &--input {
       padding: 20px;
       font-size: 0.9rem;
       border-radius: 5px;
       border: none;
       margin-bottom: 16px;
+      width: 100%;
+      border: 3px solid transparent;
+      color: $very-dark-blue;
+
+      &.error {
+        border: 3px solid $soft-red;
+      }
+
       &:focus {
-        border: 4px solid $very-dark-blue;
+        border: 3px solid $very-dark-blue;
       }
 
       &::placeholder {
         color: #c8c9d0;
       }
     }
+
     .btn-secondary {
       &:hover,
       &:focus {
@@ -70,6 +111,12 @@
       width: 100%;
       flex-direction: row;
       margin-top: 36px;
+
+      &--error {
+        &.active {
+          bottom: -30px;
+        }
+      }
 
       &--input {
         width: 300px;
