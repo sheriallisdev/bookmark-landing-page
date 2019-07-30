@@ -14,7 +14,18 @@
       padding: 16px;
       border-top: 1px solid rgba(73, 93, 207, 0.2);
       width: 100%;
+      position: relative;
+
       &.active {
+        &::after {
+          position: absolute;
+          content: "";
+          width: 50%;
+          height: 4px;
+          background-color: $soft-red;
+          left: 25%;
+          bottom: 0;
+        }
         font-weight: 500;
       }
       &:last-child {
@@ -34,6 +45,9 @@
       flex-direction: column;
       align-items: center;
       @include fadeContentIn(0.5s);
+      &::after {
+        display: none;
+      }
     }
   }
 
@@ -65,7 +79,10 @@
         border-top: none;
         &.active,
         &:focus {
-          border-bottom: 4px solid $soft-red;
+          &::after {
+            width: 100%;
+            left: 0;
+          }
         }
       }
     }
