@@ -63,7 +63,8 @@
 
       &__item {
         border-top: none;
-        &.active {
+        &.active,
+        &:focus {
           border-bottom: 4px solid $soft-red;
         }
       }

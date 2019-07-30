@@ -37,13 +37,16 @@
     a {
       padding: 10px;
       margin: 10px;
+      &:hover,
+      &:focus {
+        .icon {
+          fill: $soft-red;
+        }
+      }
     }
 
     .icon {
       fill: $white;
-      &:hover {
-        fill: $soft-red;
-      }
     }
   }
 }
