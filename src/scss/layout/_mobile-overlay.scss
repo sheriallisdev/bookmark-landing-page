@@ -80,8 +80,12 @@
 
   .social-media {
     padding-bottom: 50px;
-    img {
-      padding: 20px;
+    a {
+      padding: 10px;
+      margin: 10px;
+      .icon {
+        fill: $white;
+      }
     }
   }
 }
