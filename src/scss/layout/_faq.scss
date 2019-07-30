@@ -8,8 +8,9 @@
 
     &__body {
       border-bottom: 1px solid #dedfe3;
-      animation-name: fadeIn;
-      animation-duration: 0.2s;
+      // animation-name: fadeIn;
+      // animation-duration: 0.2s;
+      @include fadeContentIn();
 
       p {
         text-align: left;

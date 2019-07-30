@@ -14,6 +14,17 @@ $white: #fff;
 
 $breakpoint-desktop: 1280px;
 
+// Animation
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 // Mixins
 
 %button {
@@ -37,15 +48,9 @@ $breakpoint-desktop: 1280px;
   }
 }
 
-// Animation
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+@mixin fadeContentIn($time: 0.3s) {
+  animation-name: fadeIn;
+  animation-duration: $time;
 }
 
 // Screen reader only
