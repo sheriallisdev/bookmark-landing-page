@@ -20,6 +20,7 @@
     width: 300px;
 
     &--error {
+      display: none;
       &.active {
         animation-name: fadeIn;
         animation-duration: 0.2s;
@@ -45,8 +46,12 @@
         right: 20px;
         bottom: 50%;
         .icon-error {
-          fill: $soft-red;
-          position: absolute;
+          display: none;
+          &.active {
+            display: block;
+            fill: $soft-red;
+            position: absolute;
+          }
         }
       }
     }
@@ -82,7 +87,7 @@
     }
 
     button {
-      border: none;
+      border: 2px solid transparent;
       width: 100%;
       margin: 0;
       font-weight: 700;

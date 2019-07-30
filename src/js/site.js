@@ -57,8 +57,7 @@ form.addEventListener("submit", function(e) {
   if (emailIsValid(email.value) === false) {
     e.preventDefault();
 
-    removeClass(errorContent, "hidden");
-    removeClass(errorIcon, "hidden");
+    addClass(errorIcon, "active");
     addClass(errorContent, "active");
     addClass(email, "error");
 
