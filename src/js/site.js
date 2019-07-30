@@ -69,3 +69,31 @@ form.addEventListener("submit", function(e) {
 function emailIsValid(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
+
+// Features Tabbed Content
+
+const featuresNav = document.querySelector(".features-nav");
+const featuresContent = document.querySelectorAll(".features__content");
+const navLinks = document.querySelectorAll(".features-nav__item");
+
+featuresNav.addEventListener("click", function(e) {
+  const clickedTarget = e.target.dataset.target;
+  const clickedFeature = e.target;
+
+  if (e.target.tagName === "LI") {
+    featuresContent.forEach(function(contentPane) {
+      if (contentPane.id === clickedTarget) {
+        addClass(clickedFeature, "active");
+        addClass(contentPane, "active");
+        // loop through each nav item and remove the active class if it's not the clicked nav item
+        navLinks.forEach(function(navItem) {
+          if (navItem.dataset.target !== clickedTarget) {
+            removeClass(navItem, "active");
+          }
+        });
+      } else {
+        removeClass(contentPane, "active");
+      }
+    });
+  }
+});
