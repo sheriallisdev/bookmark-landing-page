@@ -1,12 +1,8 @@
-# Frontend Mentor - Bookmark landing page
+# Frontend Mentor - Bookmark Landing Page
 
 ![Design preview for the Bookmark landing page coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
-
-Thanks for checking out this front-end coding challenge.
-
-[Frontend Mentor](https://beta.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
+This landing based was coded based on the design by [Frontend Mentor](https://beta.frontendmentor.io).
 
 **To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
 
@@ -28,3 +24,12 @@ For this challenge you'll need to:
 
 - Create the rounded blue background shape with code
 - Change the `fill` and `stroke` color of the SVGs at specific points (the challenge can be completed using the single `logo-bookmark.svg` file provided)
+
+
+## What key lessons did I learn during this challenge?
+
+- Form validation
+- Aria roles
+- Styling inline SVGs
+- Styling custom error message for forms
+- Traversing the DOM
