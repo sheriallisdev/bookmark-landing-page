@@ -4,7 +4,17 @@
 
 This landing based was coded based on the design by [Frontend Mentor](https://beta.frontendmentor.io).
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+## View Completed Project
+
+[Bookmark Landing Page](https://srd-bookmark-landing-page.netlify.com/)
+
+## What key lessons did I learn during this challenge?
+
+- Form validation
+- Aria roles
+- Styling inline SVGs
+- Styling custom error message for forms
+- Traversing the DOM
 
 ## The challenge
 
@@ -24,12 +34,3 @@ For this challenge you'll need to:
 
 - Create the rounded blue background shape with code
 - Change the `fill` and `stroke` color of the SVGs at specific points (the challenge can be completed using the single `logo-bookmark.svg` file provided)
-
-
-## What key lessons did I learn during this challenge?
-
-- Form validation
-- Aria roles
-- Styling inline SVGs
-- Styling custom error message for forms
-- Traversing the DOM
